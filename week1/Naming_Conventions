@@ -5,8 +5,7 @@ Advantage of naming conventions in java
 By using standard Java naming conventions, you make your code easier to read for yourself and other programmers.
 If you fail to follow these conventions, it may generate confusion or erroneous code.
 
- key rules that must be followed by every identifier:
-
+key rules that must be followed by every identifier:
 The name must not contain any white spaces.
 The name should not start with special characters like & (ampersand), $ (dollar), _ (underscore).
 
