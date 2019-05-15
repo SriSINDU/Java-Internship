@@ -17,4 +17,35 @@ The runtime environment loads class files and ensures there is access to memory 
 In the past, most software used the operating system (OS) as its runtime environment. 
 The program ran inside whatever computer it was on, but relied on operating system settings for resource access.
 Resources in this case would be things like memory and program files and dependencies.
-The Java Runtime Environment changed all that, at least for Java programs.  nnnnn
+The Java Runtime Environment changed all that, at least for Java programs.
+
+The JRE smoothes over the diversity of operating systems, ensuring that Java programs can run on virtually any OS without modification. It also provides value-added services. Automatic memory management is one of the JRE's most important services, ensuring that programmers don't have to manually control the allocation and reallocation of memory.
+
+In short, the JRE is a sort of meta-OS for Java programs.
+It's a classic example of abstraction, abstracting the underlying operating system into a consistent platform for running Java applications.
+How the JRE works with the JVM
+A Java Virtual Machine is a running software system responsible for executing live Java programs. The JRE is the on-disk system that takes your Java code, combines it with the necessary libraries, and starts the JVM to execute it.
+
+The JRE contains libraries and software that your Java programs need to run. As an example, the Java class loader is part of the Java Runtime Environment. This important piece of software loads compiled Java code into memory and connects the code to the appropriate Java class libraries.
+
+In the layered view I just described, the JVM is created by the JRE.
+From a package perspective, the JRE contains the JVM, as Figure 1 shows.
+Installing and using the JRE
+While there is a conceptual side to the JRE, in real-world practice it's just software installed on a computer, whose purpose is to run your Java programs.
+ As a developer, you'll mostly work with the JDK and JVM, because those are the platform components you use to develop and run your Java programs. As a Java application user, you would be more involved with the JRE, which lets you run those programs.
+
+In most cases, your computer will come with Java installed, and the JRE will be included with that. If you do ever need to manually install or upgrade, you can download the current JRE version from Oracle.
+The JRE in devops
+The JRE is not very noticeable in the development stage, where it mostly just runs your programs in the OS or IDE of your choice. The JRE plays a slightly more prominent role devops and systems administration because it's used for monitoring and configuration.
+
+Basically, the JRE provides the "knobs" you would use to configure and control the characteristics of a Java application.
+Memory usage is a prime example, the bread and butter of systems administration.
+While memory usage is always important, it's vital in cloud configurations, and devops is a cloud-based technology.
+If you're working in a devops environment, or interested in branching out into devops, it's a good idea to understand how Java memory works and how it's monitored in the JRE.
+
+
+Java application monitoring
+Although application monitoring is a function of the JVM, the JRE provides configuration options, which are the necessary baseline for monitoring.
+A variety of tools are available for monitoring Java applications, from the classics (like the Unix command top) to sophisticated remote monitoring solutions like Oracle's infrastructure monitoring.
+In between these options are visual profilers like VisualVM that allow for inspecting a running JVM.
+These tools enable tracking down hotspots and memory leaks, as well as watching overall memory consumption in your system.
