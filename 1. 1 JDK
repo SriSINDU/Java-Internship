@@ -1,0 +1,64 @@
+Introduction to the Java Development Kit:
+     1. The JDK is a key platform component for building Java applications. At its heart is the Java compiler
+     2. The Java Development Kit (JDK) is one of three core technology packages used in Java programming, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment).
+     It's important to differentiate between these three technologies, as well as understanding how they're connected:
+       a.The JVM is the Java platform component that executes programs.
+       b.The JRE is the on-disk part of Java that creates the JVM.
+       c.The JDK allows developers to create Java programs that can be executed and run by the JVM and JRE.
+ 
+Refernce url: https://www.javaworld.com/article/3296360/what-is-the-jdk-introduction-to-the-java-development-kit.html 
+ 
+ Developers new to Java often confuse the Java Development Kit and the Java Runtime Environment.
+ The distinction is that the JDK is a package of tools for developing Java-based software, 
+ whereas the JRE is a package of tools for running Java code.
+ The JRE can be used as a standalone component to simply run Java programs, but it's also part of the JDK.
+ The JDK requires a JRE because running Java programs is part of developing them.
+https://images.idgesg.net/images/article/2018/08/jw-whatisjdk-fig1-100767483-medium.jpg
+
+
+Technical definition: The JDK is an implementation of the Java platform specification, including compiler and class libraries.
+Everyday definition: The JDK is a software package you download in order to create Java-based applications.
+
+The JDK & the Java compiler
+In addition to the JRE, which is the environment used to run Java applications, every JDK contains a Java compiler.
+
+Get started with the JDK:
+Getting Java setup in your development environment is as easy as downloading a JDK and adding it to your classpath.
+When you download your JDK, you will need to select the version of Java you want to use.
+Java 8 is the version most commonly in use, but as of this writing Java 10 is the newest release.
+
+JDK packages
+In addition to choosing your Java version, you will also need to select a Java package.
+Packages are Java Development Kits that are targeted for different types of development.
+The available packages are Java Enterprise Edition (Java EE), Java Standard Edition (Java SE), and Java Mobile Edition (Java ME).
+Novice developers are sometimes unsure which package is correct for their project.
+Generally, each JDK version contains Java SE. If you download Java EE or Java ME, you will get the standard edition with it. For example, Jave EE is the standard platform with additional tools useful for enterprise application development such as Enterprise JavaBeans or support for Object Relational Mapping.
+
+
+JDK version compatibility
+Since the JDK supplies the compiler for your Java programs, the JDK you use determines what Java version you are able to code in. 
+
+About Java EE
+You would download a Java EE JDK if you were primarily interested in building Java-based web applications.
+The Java EE JDK includes the Java Servlet specification, which supports HTTP request handling. 
+Every Java EE JDK implementation also requires a container, which is a server that runs Java EE applications.
+Glassfish is the Java EE server reference implementation for Oracle. Other popular implementations are Tomcat and Jetty.
+
+Installing the JDK
+When you run the JDK installer, you are offered a selection of three components: Development Tools, Source Code, and Public JRE. You may install one or all of them. In this case, just select the default.
+
+Installing the "Development Tools" option gives you the JDK proper. 
+Installing "Source Code" contains the sources for the public classes in the core Java API.
+Including this option allows you to reference the source code when building apps.
+The third option, "Public JRE," drives home that the JDK and JRE are separate entities: the public JRE can be used by other programs to execute Java programs, and can be installed separately from the JDK.
+
+
+The JDK on the command line
+Installing the JDK and JRE adds the java command to your command line. 
+You can verify this by dropping into a command shell and typing java -version, which should return the Java version you installed.
+The javac command
+The javac command lives inside the /jdk directory, but is not automatically added to the system path during installation.
+
+
+Compile with the JDK
+Use the JDK compiler to turn your text file into an executable program. Compiled code in Java is known as bytecode, and carries the .class extension.
