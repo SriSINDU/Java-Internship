@@ -1,0 +1,20 @@
+Together, the Java Development Kit (JDK), the Java Virtual Machine (JVM), and the Java Runtime Environment (JRE) form a powerful trifecta of Java platform components for developing and running Java applications. 
+
+Practically speaking, a runtime environment is a piece of software that is designed to run other software. 
+As the runtime environment for Java, the JRE contains the Java class libraries, the Java class loader, and the Java Virtual Machine.
+
+In this system:
+The class loader is responsible for correctly loading classes and connecting them with the core Java class libraries.
+The JVM is responsible for ensuring Java applications have the resources they need to run and perform well in your device or cloud environment.
+The JRE is mainly a container for those other components, and is responsible for orchestrating their activities.
+
+Installing the JDK, JRE, and JVM
+From an installation perspective, anytime you download a JDK, it will include a version-compatible JRE, and that JRE will include a default JVM. 
+You also can download the JRE separately from the JDK, and you may choose from a variety of JVMs
+
+A software program needs to execute, and to do that it needs an environment to run in.
+The runtime environment loads class files and ensures there is access to memory and other system resources to run them. 
+In the past, most software used the operating system (OS) as its runtime environment. 
+The program ran inside whatever computer it was on, but relied on operating system settings for resource access.
+Resources in this case would be things like memory and program files and dependencies.
+The Java Runtime Environment changed all that, at least for Java programs.
