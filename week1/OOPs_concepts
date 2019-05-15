@@ -1,6 +1,4 @@
 Java OOPs Concepts:
-Object means a real-world entity such as a pen, chair, table, computer, watch, etc.
-Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
 
 It simplifies the software development and maintenance by providing some concepts:
 1.Object
@@ -12,9 +10,9 @@ It simplifies the software development and maintenance by providing some concept
 
 
 Object:
-Any entity that has state and behavior is known as an object.
+Any entity that has state and behavior is known as an object.It can be physical or logical.
 For example a chair, pen, table, keyboard, bike, etc.
-It can be physical or logical.
+
 An Object can be defined as an instance of a class.
 An object contains an address and takes up some space in memory.
 Objects can communicate without knowing the details of each other's data or code.
